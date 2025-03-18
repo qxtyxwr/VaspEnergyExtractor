@@ -44,7 +44,7 @@
 从当前目录中提取VASP计算能量数据：
 
 ```bash
-python vasp_energy_extractor.py
+vasp_energy_extractor.py
 ```
 
 这将扫描当前目录下的所有子目录，提取VASP计算能量并保存到`energies.csv`文件。
