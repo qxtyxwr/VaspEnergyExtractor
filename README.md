@@ -6,7 +6,7 @@
 ![Python版本](https://img.shields.io/badge/Python-3.6%2B-brightgreen.svg)
 ![许可证](https://img.shields.io/badge/许可证-MIT-green.svg)
 
-一个功能强大的Python脚本，用于从VASP（Vienna Ab initio Simulation Package）计算结果中提取能量数据并进行反应能量计算的工具。
+一个用于从VASP（Vienna Ab initio Simulation Package）计算结果中提取能量数据并进行反应能量计算的工具。
 
 ## 功能特点
 
