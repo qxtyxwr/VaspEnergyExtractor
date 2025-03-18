@@ -34,7 +34,7 @@
 
 2. 确保脚本具有执行权限（Linux/Mac用户）
    ```bash
-   chmod +x vasp_energy_extractor.py
+   chmod +x vasp_energy_extractor
    ```
 
 ## 使用方法
@@ -44,7 +44,7 @@
 从当前目录中提取VASP计算能量数据：
 
 ```bash
-vasp_energy_extractor.py
+vasp_energy_extractor
 ```
 
 这将扫描当前目录下的所有子目录，提取VASP计算能量并保存到`energies.csv`文件。
@@ -64,17 +64,17 @@ vasp_energy_extractor.py
 
 1. **递归扫描特定目录并保存到自定义文件**
    ```bash
-   vasp_energy_extractor.py -d ./my_calculations -o results.csv -r
+   vasp_energy_extractor -d ./my_calculations -o results.csv -r
    ```
 
 2. **输出详细日志并同时保存JSON格式**
    ```bash
-   vasp_energy_extractor.py -v -j energy_data.json
+   vasp_energy_extractor -v -j energy_data.json
    ```
 
 3. **计算反应能量**
    ```bash
-   vasp_energy_extractor.py -r --reactions reactions.txt
+   vasp_energy_extractor -r --reactions reactions.txt
    ```
 
 ## 输入/输出格式说明
@@ -153,7 +153,7 @@ E + F = 2G
 1. 准备含有多个VASP计算的目录结构
 2. 运行脚本提取能量：
    ```bash
-   vasp_energy_extractor.py -d ./calculations -r -o energies.csv
+   vasp_energy_extractor -d ./calculations -r -o energies.csv
    ```
 3. 查看生成的CSV文件了解能量结果
 
@@ -167,7 +167,7 @@ E + F = 2G
 
 2. 运行脚本计算反应能量：
    ```bash
-   vasp_energy_extractor.py -d ./calculations -r --reactions reactions.txt -o reaction_energies.csv
+   vasp_energy_extractor -d ./calculations -r --reactions reactions.txt -o reaction_energies.csv
    ```
 
 3. 在输出文件中查看反应能量结果
